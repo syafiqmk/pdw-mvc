@@ -7,7 +7,7 @@
         protected $method;
         protected $params = [];
 
-        //fungsi contructor App
+        //method contructor App
         public function __construct()
         {   
             //property url
@@ -40,7 +40,7 @@
         }
 
 
-        //fungsi parsing URL
+        //method parsing URL
         public function parseURL() {
 
             if (isset($_GET["url"])) {
