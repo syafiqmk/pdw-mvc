@@ -52,5 +52,29 @@
                 exit;
             }
         }
+
+        //edit data
+        public function edit($id) {
+
+            $data['jur'] = $this->model("Jurusan_model")->getJurusanById($id);
+            $data['title'] = "Edit Data Jurusan";
+
+            $this->view("templates/header", $data);
+            $this->view("jurusan/edit", $data);
+            $this->view("templates/footer");
+        }
+
+        public function prosesEdit() {
+
+            if($this->model("Jurusan_model")->editJurusan($_POST) > 0) {
+                Flasher::setFlash("Data Jurusan Berhasil Ditambah!!", "success");
+                header("location:".BASE_URL);
+                exit;
+            } else {
+                Flasher::setFlash("Data Jurusan Gagal Ditambah!!", "danger");
+                header("location:".BASE_URL);
+                exit;
+            }
+        }
     }
 ?>

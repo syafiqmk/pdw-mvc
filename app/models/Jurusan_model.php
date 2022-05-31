@@ -17,6 +17,14 @@
             return $this->db->resultSet();
         }
 
+        public function getJurusanById($id) {
+            $query = "SELECT * FROM ".$this->table." WHERE id_jurusan = :id";
+            $this->db->query($query);
+            $this->db->bind(":id", $id);
+            
+            return $this->db->single();
+        }
+
         //tambah data
         public function tambahJurusan($data) {
             $query = "INSERT INTO ".$this->table." VALUES('', :nama)";
@@ -32,6 +40,17 @@
             $query = "DELETE FROM ".$this->table." WHERE id_jurusan = :id ";
             $this->db->query($query);
             $this->db->bind(":id", $data);
+            $this->db->execute();
+
+            return $this->db->rowCount();
+        }
+
+        //edit data
+        public function editJurusan($data) {
+            $query = "UPDATE ".$this->table." SET nama_jurusan = :nama WHERE id_jurusan = :id";
+            $this->db->query($query);
+            $this->db->bind(":nama", $data['nama']);
+            $this->db->bind(":id", $data['id']);
             $this->db->execute();
 
             return $this->db->rowCount();

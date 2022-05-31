@@ -29,7 +29,7 @@
                     <td><?= $jur['nama_jurusan'] ?></td>
                     <td>
                         <a href="<?= BASE_URL ?>/jurusan/edit/<?= $jur['id_jurusan']?>" class="btn btn-primary">Edit</a>
-                        <a href="<?= BASE_URL ?>/jurusan/hapus/<?= $jur['id_jurusan']?>" class="btn btn-danger">Hapus</a>
+                        <a href="<?= BASE_URL ?>/jurusan/hapus/<?= $jur['id_jurusan']?>" class="btn btn-danger" onclick="javascript:return confirm('Hapus Data Jurusan?')">Hapus</a>
                     </td>
                 </tr>
                 
