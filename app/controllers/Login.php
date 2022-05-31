@@ -19,9 +19,10 @@
         public function prosesLogin() {
 
             if($row = $this->model("Login_model")->cekLogin($_POST) > 0) {
-                $_SESSION["user"] = $row["userid"];
-                $_SESSION["nama"] = $row["nama"];
-                $_SESSION["login"] = $row["login"];
+                $result = $this->model("Login_model")->cekLogin($_POST);
+                $_SESSION["user"] = $result['userid'];
+                $_SESSION["nama"] = $result["nama"];
+                $_SESSION["login"] = "login";
 
                 header("location:".BASE_URL);
             } else {

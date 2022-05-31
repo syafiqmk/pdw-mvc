@@ -1,3 +1,4 @@
+<?php var_dump($_SESSION)?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $data['title'] ?></title>
     <!-- koneksi style -->
-    <link rel="stylesheet" href="css/boostrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
             <a href="<?= BASE_URL?>" class="navbar-brand">Akademik</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,3 +35,4 @@
             </div>
         </div>
     </nav>
+

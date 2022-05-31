@@ -16,7 +16,7 @@
         //check login
         public function cekLogin() {
             if($_SESSION["login"] != "login") {
-                Flasher::setFlash("Anda Belum Login!!", "warning");
+                // Flasher::setFlash("Anda Belum Login!!", "warning");
                 header("Location:".BASE_URL."/login");
                 exit;
             }
