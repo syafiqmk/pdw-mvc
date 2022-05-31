@@ -18,13 +18,7 @@
 
     <div class="container" id="form">
         <h2>Login</h2>
-        <!-- flasher -->
-        <div class="row">
-            <div class="col-lg-12">
-                <?php Flasher::flash(); ?>
-            </div>
-        </div>
-
+        
         <!-- form -->
         <form action="<?= BASE_URL;?>/login/prosesLogin" method="post">
             <div class="mb-3">
@@ -40,6 +34,14 @@
                 <button class="btn btn-danger" type="reset">Reset</button>
             </div>
         </form>
+
+        <!-- flasher -->
+        <div class="row">
+            <div class="col-lg-12">
+                <?php Flasher::flash(); ?>
+            </div>
+        </div>
+        
     </div>
     
 
