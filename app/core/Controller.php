@@ -12,5 +12,14 @@
             require_once "../app/models/".$model.".php";
             return new $model;
         }
+
+        //check login
+        public function cekLogin() {
+            if($_SESSION["login"] != "login") {
+                Flasher::setFlash("Anda Belum Login!!", "warning");
+                header("Location:".BASE_URL."/login");
+                exit;
+            }
+        }
     }
 ?>
