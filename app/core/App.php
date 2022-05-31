@@ -3,8 +3,8 @@
     class App {
 
         //property class App
-        protected $controller = "";
-        protected $method = "";
+        protected $controller = "jurusan";
+        protected $method = "index";
         protected $params = [];
 
         //method contructor App
