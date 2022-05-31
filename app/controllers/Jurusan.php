@@ -12,7 +12,7 @@
             $data['title'] = "Jurusan";
 
             $this->view("templates/header", $data);
-            // $this->view("templates/header", $data);
+            $this->view("jurusan/index", $data);
             $this->view("templates/footer");
         }
     }
