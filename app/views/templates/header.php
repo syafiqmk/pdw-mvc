@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $data['title'] ?></title>
     <!-- koneksi style -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/css/style.css">
 </head>
 <body>
     <!-- navbar -->
