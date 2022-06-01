@@ -8,7 +8,7 @@
 </div>
 
 <!-- button -->
-<div class="list-button text-center">
+<div class="text-center">
     <a href="<?= BASE_URL ?>/jurusan/tambah" class="btn btn-primary">Tambah Data</a>
 </div>
 
