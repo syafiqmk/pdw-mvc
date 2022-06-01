@@ -39,5 +39,19 @@
                 exit;
             }
         }
+
+        //hapus data
+        public function hapus($id) {
+
+            if($this->model("Prodi_model")->hapusProdi($id) > 0) {
+                Flasher::setFlash("Data Prodi Berhasil Dihapus!!", "success");
+                header("Location:".BASE_URL."/prodi");
+                exit;
+            } else {
+                Flasher::setFlash("Data Prodi Gagal Dihapus!!", "danger");
+                header("Location:".BASE_URL."/prodi");
+                exit;
+            }
+        }
     }
 ?>

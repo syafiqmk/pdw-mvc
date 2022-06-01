@@ -25,5 +25,15 @@
 
             return $this->db->rowCount();
         }
+
+        //hapus data
+        public function hapusProdi($id) {
+            $query = "DELETE FROM prodi WHERE id_prodi = :id ";
+            $this->db->query($query);
+            $this->db->bind(":id", $id);
+            $this->db->execute();
+
+            return $this->db->rowCount();
+        }
     }
 ?>
