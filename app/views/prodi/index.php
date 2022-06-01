@@ -9,7 +9,7 @@
 
 <!-- button -->
 <div class="text-center">
-    <a href="<?= BASE_URL ?>" class="btn btn-primary">Tambah Data</a>
+    <a href="<?= BASE_URL ?>/prodi/tambah" class="btn btn-primary">Tambah Data</a>
 </div>
 
 

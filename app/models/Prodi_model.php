@@ -14,5 +14,16 @@
             
             return $this->db->resultSet();
         }
+
+        //tambah data
+        public function tambahProdi($data) {
+            $query = "INSERT INTO prodi VALUES('', :nama, :jurusan)";
+            $this->db->query($query);
+            $this->db->bind(":nama", $data['nama']);
+            $this->db->bind(":jurusan", $data['jurusan']);
+            $this->db->execute();
+
+            return $this->db->rowCount();
+        }
     }
 ?>
