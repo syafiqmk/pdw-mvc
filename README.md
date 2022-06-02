@@ -1,2 +1,2 @@
-# Aplikasi Matku Desain & Pemrograman WEB (Akademik)
+# Aplikasi Matkul Desain & Pemrograman WEB (Akademik)
 Dibuat Oleh Syafiq Muhammad Kahfi
