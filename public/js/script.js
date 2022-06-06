@@ -42,5 +42,12 @@ $(document).ready(function() {
             })
         })
     })
+
+    $("#qrBtn").click(function() {
+        $("#qrResult").html("");
+        var qrVal = $("#qrVal").val();
+        $("#qrResult").qrcode(qrVal);
+        
+    })
     
 });

@@ -1,7 +1,7 @@
 <?php 
 
     //turn error reporting off
-    error_reporting(0);
+    // error_reporting(0);
 
     //check session
     if(!session_id()) {
