@@ -78,5 +78,25 @@
                 exit;
             }
         }
+
+
+        ///cetak prodi
+        public function cetak() {
+            $data['prodi'] = $this->model("Prodi_model")->getProdi();
+
+            $this->view("prodi/cetak", $data);
+        }
+
+        public function cetakPrint() {
+            $data['prodi'] = $this->model("Prodi_model")->getProdi();
+
+            $this->view("prodi/cetakPrint", $data);
+        }
+
+        public function cetakExcel() {
+            $data['prodi'] = $this->model("Prodi_model")->getProdi();
+
+            $this->view("prodi/cetakExcel", $data);
+        }
     }
 ?>
